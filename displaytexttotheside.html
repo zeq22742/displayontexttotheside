@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Getting Started with HTML5 local storage</title>
+    <script type="text/javascript" src="new11.js"></script>
+	<script src="new11.js"></script>
+	
+</head>
+
+
+<body onload="load()">
+<div id="myform">
+
+        <td>
+            <input type="button" id="get" value="Previous Information" onclick="Javascript:get()">
+        </td>
+    </tr>
+</div>
+
+
+
+<br>
+<div>
+Enter Question 1:
+<input type="text" id="question1" name="question1">
+<br>
+<br> Next, add a correct answer FIRST and then the incorrect answers for your question.
+<br>
+<p>
+<input type="text" id="correctanswer1" name="correctanswer1" size="50">
+</p>
+<p>
+<input type="text" id="incorrect11" name="incorrect11" size="50">
+</p>
+<p>
+<input type="text" id="incorrect12" name="incorrect12" size="50">
+</p>
+<p>
+<input type="text" id="incorrect13" name="incorrect13"size="50">
+</p>
+<br>
+
+<img id="uploadPreview1" style="width: 100px; height: 100px;" />
+
+<input id="uploadImage1" type="file" name="myPhoto1" onchange="PreviewImage1();" />
+
+<script type="text/javascript">
+
+
+
+function PreviewImage1() {
+
+var oFReader = new FileReader();
+
+oFReader.readAsDataURL(document.getElementById("uploadImage1").files[0]);
+
+oFReader.onload = function (oFREvent) {
+
+document.getElementById("uploadPreview1").src = oFREvent.target.result;
+
+sessionStorage.setItem("image", oFREvent.target.result);
+localStorage.setItem("image", oFREvent.target.result);
+
+};
+
+};
+
+</script>
+</div>
+
+
+
+
+
+<br>
+<div>
+Enter Question 2:
+<input type="text" id="question2" name="question2">
+<br>
+<br> Next, add a correct answer FIRST and then the incorrect answers for your question.
+<br>
+<p>
+<input type="text" id="correctanswer2" name="correctanswer2" size="50">
+</p>
+<p>
+<input type="text" id="incorrect21" name="incorrect21" size="50">
+</p>
+<p>
+<input type="text" id="incorrect22" name="incorrect22" size="50">
+</p>
+<p>
+<input type="text" id="incorrect23" name="incorrect23"size="50">
+</p>
+<br>
+
+<img id="uploadPreview2" style="width: 100px; height: 100px;" />
+
+<input id="uploadImage2" type="file" name="myPhoto2" onchange="PreviewImage2();" />
+
+<script type="text/javascript">
+
+
+
+function PreviewImage2() {
+
+var oFReader = new FileReader();
+
+oFReader.readAsDataURL(document.getElementById("uploadImage2").files[0]);
+
+oFReader.onload = function (oFREvent) {
+
+document.getElementById("uploadPreview2").src = oFREvent.target.result;
+
+sessionStorage.setItem("image", oFREvent.target.result);
+localStorage.setItem("image", oFREvent.target.result);
+
+};
+
+};
+
+</script>
+</div>
+
+
+
+
+<br>
+<div>
+Enter Question 3:
+<input type="text" id="question3" name="question3">
+<br>
+<br> Next, add a correct answer FIRST and then the incorrect answers for your question.
+<br>
+<p>
+<input type="text" id="correctanswer3" name="correctanswer3" size="50">
+</p>
+<p>
+<input type="text" id="incorrect31" name="incorrect31" size="50">
+</p>
+<p>
+<input type="text" id="incorrect32" name="incorrect32" size="50">
+</p>
+<p>
+<input type="text" id="incorrect33" name="incorrect33"size="50">
+</p>
+<br>
+
+<img id="uploadPreview3" style="width: 100px; height: 100px;" />
+
+<input id="uploadImage3" type="file" name="myPhoto3" onchange="PreviewImage3();" />
+
+<script type="text/javascript">
+
+
+
+function PreviewImage3() {
+
+var oFReader = new FileReader();
+
+oFReader.readAsDataURL(document.getElementById("uploadImage3").files[0]);
+
+oFReader.onload = function (oFREvent) {
+
+document.getElementById("uploadPreview3").src = oFREvent.target.result;
+
+sessionStorage.setItem("image", oFREvent.target.result);
+localStorage.setItem("image", oFREvent.target.result);
+
+};
+
+};
+
+</script>
+</div>
+
+
+
+
+
+
+<br>
+<div>
+Enter Question 4:
+<input type="text" id="question4" name="question4">
+<br>
+<br> Next, add a correct answer FIRST and then the incorrect answers for your question.
+<br>
+<p>
+<input type="text" id="correctanswer4" name="correctanswer4" size="50">
+</p>
+<p>
+<input type="text" id="incorrect41" name="incorrect41" size="50">
+</p>
+<p>
+<input type="text" id="incorrect42" name="incorrect42" size="50">
+</p>
+<p>
+<input type="text" id="incorrect43" name="incorrect43"size="50">
+</p>
+<br>
+
+<img id="uploadPreview4" style="width: 100px; height: 100px;" />
+
+<input id="uploadImage4" type="file" name="myPhoto4" onchange="PreviewImage4();" />
+
+<script type="text/javascript">
+
+
+
+function PreviewImage4() {
+
+var oFReader = new FileReader();
+
+oFReader.readAsDataURL(document.getElementById("uploadImage4").files[0]);
+
+oFReader.onload = function (oFREvent) {
+
+document.getElementById("uploadPreview4").src = oFREvent.target.result;
+
+sessionStorage.setItem("image", oFREvent.target.result);
+localStorage.setItem("image", oFREvent.target.result);
+
+};
+
+};
+
+</script>
+</div>
+
+
+
+<br>
+<div>
+Enter Question 5:
+<input type="text" id="question5" name="question5">
+<br>
+<br> Next, add a correct answer FIRST and then the incorrect answers for your question.
+<br>
+<p>
+<input type="text" id="correctanswer5" name="correctanswer5" size="50">
+</p>
+<p>
+<input type="text" id="incorrect51" name="incorrect51" size="50">
+</p>
+<p>
+<input type="text" id="incorrect52" name="incorrect52" size="50">
+</p>
+<p>
+<input type="text" id="incorrect53" name="incorrect53"size="50">
+</p>
+<br>
+
+<img id="uploadPreview5" style="width: 100px; height: 100px;" />
+
+<input id="uploadImage5" type="file" name="myPhoto5" onchange="PreviewImage5();" />
+
+<script type="text/javascript">
+
+
+
+function PreviewImage5() {
+
+var oFReader = new FileReader();
+
+oFReader.readAsDataURL(document.getElementById("uploadImage5").files[0]);
+
+oFReader.onload = function (oFREvent) {
+
+document.getElementById("uploadPreview5").src = oFREvent.target.result;
+
+sessionStorage.setItem("image", oFREvent.target.result);
+localStorage.setItem("image", oFREvent.target.result);
+
+};
+
+};
+
+</script>
+</div>
+
+
+
+
+<br>
+<div>
+Enter Question 6:
+<input type="text" id="question6" name="question6">
+<br>
+<br> Next, add a correct answer FIRST and then the incorrect answers for your question.
+<br>
+<p>
+<input type="text" id="correctanswer6" name="correctanswer6" size="50">
+</p>
+<p>
+<input type="text" id="incorrect61" name="incorrect61" size="50">
+</p>
+<p>
+<input type="text" id="incorrect62" name="incorrect62" size="50">
+</p>
+<p>
+<input type="text" id="incorrect63" name="incorrect63"size="50">
+</p>
+<br>
+
+<img id="uploadPreview6" style="width: 100px; height: 100px;" />
+
+<input id="uploadImage6" type="file" name="myPhoto6" onchange="PreviewImage6();" />
+
+<script type="text/javascript">
+
+
+
+function PreviewImage6() {
+
+var oFReader = new FileReader();
+
+oFReader.readAsDataURL(document.getElementById("uploadImage6").files[0]);
+
+oFReader.onload = function (oFREvent) {
+
+document.getElementById("uploadPreview6").src = oFREvent.target.result;
+
+sessionStorage.setItem("image", oFREvent.target.result);
+localStorage.setItem("image", oFREvent.target.result);
+
+};
+
+};
+
+</script>
+</div>
+
+
+
+
+
+<br>
+<div>
+Enter Question 7:
+<input type="text" id="question7" name="question7">
+<br>
+<br> Next, add a correct answer FIRST and then the incorrect answers for your question.
+<br>
+<p>
+<input type="text" id="correctanswer7" name="correctanswer7" size="50">
+</p>
+<p>
+<input type="text" id="incorrect71" name="incorrect71" size="50">
+</p>
+<p>
+<input type="text" id="incorrect72" name="incorrect72" size="50">
+</p>
+<p>
+<input type="text" id="incorrect73" name="incorrect73"size="50">
+</p>
+<br>
+
+<img id="uploadPreview7" style="width: 100px; height: 100px;" />
+
+<input id="uploadImage7" type="file" name="myPhoto7" onchange="PreviewImage7();" />
+
+<script type="text/javascript">
+
+
+
+function PreviewImage7() {
+
+var oFReader = new FileReader();
+
+oFReader.readAsDataURL(document.getElementById("uploadImage7").files[0]);
+
+oFReader.onload = function (oFREvent) {
+
+document.getElementById("uploadPreview7").src = oFREvent.target.result;
+
+sessionStorage.setItem("image", oFREvent.target.result);
+localStorage.setItem("image", oFREvent.target.result);
+
+};
+
+};
+
+</script>
+</div>
+
+
+
+<br>
+<div>
+Enter Question 8:
+<input type="text" id="question8" name="question8">
+<br>
+<br> Next, add a correct answer FIRST and then the incorrect answers for your question.
+<br>
+<p>
+<input type="text" id="correctanswer8" name="correctanswer8" size="50">
+</p>
+<p>
+<input type="text" id="incorrect81" name="incorrect81" size="50">
+</p>
+<p>
+<input type="text" id="incorrect82" name="incorrect82" size="50">
+</p>
+<p>
+<input type="text" id="incorrect83" name="incorrect83"size="50">
+</p>
+<br>
+
+<img id="uploadPreview8" style="width: 100px; height: 100px;" />
+
+<input id="uploadImage8" type="file" name="myPhoto8" onchange="PreviewImage8();" />
+
+<script type="text/javascript">
+
+
+
+function PreviewImage8() {
+
+var oFReader = new FileReader();
+
+oFReader.readAsDataURL(document.getElementById("uploadImage8").files[0]);
+
+oFReader.onload = function (oFREvent) {
+
+document.getElementById("uploadPreview8").src = oFREvent.target.result;
+
+sessionStorage.setItem("image", oFREvent.target.result);
+localStorage.setItem("image", oFREvent.target.result);
+
+};
+
+};
+
+</script>
+</div>
+
+
+
+
+
+<br>
+<div>
+Enter Question 9:
+<input type="text" id="question9" name="question9">
+<br>
+<br> Next, add a correct answer FIRST and then the incorrect answers for your question.
+<br>
+<p>
+<input type="text" id="correctanswer9" name="correctanswer9" size="50">
+</p>
+<p>
+<input type="text" id="incorrect91" name="incorrect91" size="50">
+</p>
+<p>
+<input type="text" id="incorrect92" name="incorrect92" size="50">
+</p>
+<p>
+<input type="text" id="incorrect93" name="incorrect93"size="50">
+</p>
+<br>
+
+<img id="uploadPreview9" style="width: 100px; height: 100px;" />
+
+<input id="uploadImage9" type="file" name="myPhoto9" onchange="PreviewImage9();" />
+
+<script type="text/javascript">
+
+
+
+function PreviewImage9() {
+
+var oFReader = new FileReader();
+
+oFReader.readAsDataURL(document.getElementById("uploadImage9").files[0]);
+
+oFReader.onload = function (oFREvent) {
+
+document.getElementById("uploadPreview9").src = oFREvent.target.result;
+
+sessionStorage.setItem("image", oFREvent.target.result);
+localStorage.setItem("image", oFREvent.target.result);
+
+};
+
+};
+
+</script>
+</div>
+
+
+
+<br>
+<div>
+Enter Question 10:
+<input type="text" id="question10" name="question10">
+<br>
+<br> Next, add a correct answer FIRST and then the incorrect answers for your question.
+<br>
+<p>
+<input type="text" id="correctanswer10" name="correctanswer10" size="50">
+</p>
+<p>
+<input type="text" id="incorrect101" name="incorrect101" size="50">
+</p>
+<p>
+<input type="text" id="incorrect102" name="incorrect102" size="50">
+</p>
+<p>
+<input type="text" id="incorrect103" name="incorrect103"size="50">
+</p>
+<br>
+
+<img id="uploadPreview10" style="width: 100px; height: 100px;" />
+
+<input id="uploadImage10" type="file" name="myPhoto10" onchange="PreviewImage10();" />
+
+<script type="text/javascript">
+
+
+
+function PreviewImage10() {
+
+var oFReader = new FileReader();
+
+oFReader.readAsDataURL(document.getElementById("uploadImage10").files[0]);
+
+oFReader.onload = function (oFREvent) {
+
+document.getElementById("uploadPreview10").src = oFREvent.target.result;
+
+sessionStorage.setItem("image", oFREvent.target.result);
+localStorage.setItem("image", oFREvent.target.result);
+
+};
+
+};
+
+</script>
+</div>
+
+
+
+<br>
+<div>
+Enter Question 11:
+<input type="text" id="question11" name="question11">
+<br>
+<br> Next, add a correct answer FIRST and then the incorrect answers for your question.
+<br>
+<p>
+<input type="text" id="correctanswer11" name="correctanswer11" size="50">
+</p>
+<p>
+<input type="text" id="incorrect111" name="incorrect111" size="50">
+</p>
+<p>
+<input type="text" id="incorrect112" name="incorrect112" size="50">
+</p>
+<p>
+<input type="text" id="incorrect113" name="incorrect113"size="50">
+</p>
+<br>
+
+<img id="uploadPreview11" style="width: 100px; height: 100px;" />
+
+<input id="uploadImage11" type="file" name="myPhoto11" onchange="PreviewImage11();" />
+
+<script type="text/javascript">
+
+
+
+function PreviewImage11() {
+
+var oFReader = new FileReader();
+
+oFReader.readAsDataURL(document.getElementById("uploadImage11").files[0]);
+
+oFReader.onload = function (oFREvent) {
+
+document.getElementById("uploadPreview11").src = oFREvent.target.result;
+
+sessionStorage.setItem("image", oFREvent.target.result);
+localStorage.setItem("image", oFREvent.target.result);
+
+};
+
+};
+
+</script>
+</div>
+
+
+<br>
+<div>
+Enter Question 12:
+<input type="text" id="question12" name="question12">
+<br>
+<br> Next, add a correct answer FIRST and then the incorrect answers for your question.
+<br>
+<p>
+<input type="text" id="correctanswer12" name="correctanswer12" size="50">
+</p>
+<p>
+<input type="text" id="incorrect121" name="incorrect121" size="50">
+</p>
+<p>
+<input type="text" id="incorrect122" name="incorrect122" size="50">
+</p>
+<p>
+<input type="text" id="incorrect123" name="incorrect123"size="50">
+</p>
+<br>
+
+<img id="uploadPreview12" style="width: 100px; height: 100px;" />
+
+<input id="uploadImage12" type="file" name="myPhoto12" onchange="PreviewImage12();" />
+
+<script type="text/javascript">
+
+
+
+function PreviewImage12() {
+
+var oFReader = new FileReader();
+
+oFReader.readAsDataURL(document.getElementById("uploadImage12").files[0]);
+
+oFReader.onload = function (oFREvent) {
+
+document.getElementById("uploadPreview12").src = oFREvent.target.result;
+
+sessionStorage.setItem("image", oFREvent.target.result);
+localStorage.setItem("image", oFREvent.target.result);
+
+};
+
+};
+
+</script>
+</div>
+
+
+
+
+<br>
+<div>
+Enter Question 13:
+<input type="text" id="question13" name="question13">
+<br>
+<br> Next, add a correct answer FIRST and then the incorrect answers for your question.
+<br>
+<p>
+<input type="text" id="correctanswer13" name="correctanswer13" size="50">
+</p>
+<p>
+<input type="text" id="incorrect131" name="incorrect131" size="50">
+</p>
+<p>
+<input type="text" id="incorrect132" name="incorrect132" size="50">
+</p>
+<p>
+<input type="text" id="incorrect133" name="incorrect133"size="50">
+</p>
+<br>
+
+<img id="uploadPreview13" style="width: 100px; height: 100px;" />
+
+<input id="uploadImage13" type="file" name="myPhoto13" onchange="PreviewImage13();" />
+
+<script type="text/javascript">
+
+
+
+function PreviewImage13() {
+
+var oFReader = new FileReader();
+
+oFReader.readAsDataURL(document.getElementById("uploadImage13").files[0]);
+
+oFReader.onload = function (oFREvent) {
+
+document.getElementById("uploadPreview13").src = oFREvent.target.result;
+
+sessionStorage.setItem("image", oFREvent.target.result);
+localStorage.setItem("image", oFREvent.target.result);
+
+};
+
+};
+
+</script>
+</div>
+
+
+
+<br>
+<div>
+Enter Question 14:
+<input type="text" id="question14" name="question14">
+<br>
+<br> Next, add a correct answer FIRST and then the incorrect answers for your question.
+<br>
+<p>
+<input type="text" id="correctanswer14" name="correctanswer14" size="50">
+</p>
+<p>
+<input type="text" id="incorrect141" name="incorrect141" size="50">
+</p>
+<p>
+<input type="text" id="incorrect142" name="incorrect142" size="50">
+</p>
+<p>
+<input type="text" id="incorrect143" name="incorrect143"size="50">
+</p>
+<br>
+
+<img id="uploadPreview14" style="width: 100px; height: 100px;" />
+
+<input id="uploadImage14" type="file" name="myPhoto14" onchange="PreviewImage14();" />
+
+<script type="text/javascript">
+
+
+
+function PreviewImage14() {
+
+var oFReader = new FileReader();
+
+oFReader.readAsDataURL(document.getElementById("uploadImage14").files[0]);
+
+oFReader.onload = function (oFREvent) {
+
+document.getElementById("uploadPreview14").src = oFREvent.target.result;
+
+sessionStorage.setItem("image", oFREvent.target.result);
+localStorage.setItem("image", oFREvent.target.result);
+
+};
+
+};
+
+</script>
+</div>
+
+
+<br>
+<div>
+Enter Question 15:
+<input type="text" id="question15" name="question15">
+<br>
+<br> Next, add a correct answer FIRST and then the incorrect answers for your question.
+<br>
+<p>
+<input type="text" id="correctanswer15" name="correctanswer15" size="50">
+</p>
+<p>
+<input type="text" id="incorrect151" name="incorrect151" size="50">
+</p>
+<p>
+<input type="text" id="incorrect152" name="incorrect152" size="50">
+</p>
+<p>
+<input type="text" id="incorrect153" name="incorrect153"size="50">
+</p>
+<br>
+
+<img id="uploadPreview15" style="width: 100px; height: 100px;" />
+
+<input id="uploadImage15" type="file" name="myPhoto15" onchange="PreviewImage15();" />
+
+<script type="text/javascript">
+
+
+
+
+function PreviewImage15() {
+
+var oFReader = new FileReader();
+
+oFReader.readAsDataURL(document.getElementById("uploadImage15").files[0]);
+
+oFReader.onload = function (oFREvent) {
+
+document.getElementById("uploadPreview15").src = oFREvent.target.result;
+
+sessionStorage.setItem("image", oFREvent.target.result);
+localStorage.setItem("image", oFREvent.target.result);
+
+};
+
+};
+
+</script>
+</div>
+
+
+
+<br>
+<div>
+Enter Question 16:
+<input type="text" id="question16" name="question16">
+<br>
+<br> Next, add a correct answer FIRST and then the incorrect answers for your question.
+<br>
+<p>
+<input type="text" id="correctanswer16" name="correctanswer16" size="50">
+</p>
+<p>
+<input type="text" id="incorrect161" name="incorrect161" size="50">
+</p>
+<p>
+<input type="text" id="incorrect162" name="incorrect162" size="50">
+</p>
+<p>
+<input type="text" id="incorrect163" name="incorrect163"size="50">
+</p>
+<br>
+
+<img id="uploadPreview16" style="width: 100px; height: 100px;" />
+
+<input id="uploadImage16" type="file" name="myPhoto16" onchange="PreviewImage16();" />
+
+<script type="text/javascript">
+
+
+
+
+function PreviewImage16() {
+
+var oFReader = new FileReader();
+
+oFReader.readAsDataURL(document.getElementById("uploadImage16").files[0]);
+
+oFReader.onload = function (oFREvent) {
+
+document.getElementById("uploadPreview16").src = oFREvent.target.result;
+
+sessionStorage.setItem("image", oFREvent.target.result);
+localStorage.setItem("image", oFREvent.target.result);
+
+};
+
+};
+
+</script>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+<p>
+<input type="button" id="add" value="Save" onclick="Javascript:save()">
+</p>
+
+</form>
+</body>
+</html>
